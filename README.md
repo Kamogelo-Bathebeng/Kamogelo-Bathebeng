@@ -3,10 +3,11 @@
 <h1 align="center">Hi there, I'm Kamogelo Bathebeng 👋</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Cybersecurity%20Analyst-Aspiring-blue" />
-  <img src="https://img.shields.io/badge/BSc%20Graduate-Sol%20Plaatje%20University-2E8B57" />
-  <img src="https://img.shields.io/badge/Open%20to%20work-Internships%20%7C%20Entry%20Level%20Roles-8A2BE2" />
+  <img src="https://img.shields.io/badge/Aspiring%20Cybersecurity%20Analyst-blue" />
+  <img src="https://img.shields.io/badge/BSc%20Mathematical%20%26%20Computer%20Science%20Graduate-2E8B57" />
+  <img src="https://img.shields.io/badge/Open%20to%20work-Internships-8A2BE2" />
 </p>
+
 
 ---
 
