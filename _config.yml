@@ -1,5 +1,18 @@
-title: "Kamogelo's SOC & Cybersecurity Blog"
-description: "Projects, analysis, and tutorials from a SOC Analyst in training."
-theme: minima
+title: "Kamogelo’s Cybersecurity & SOC Blog"
+description: "Technical write-ups, investigations, and defensive security engineering."
+theme: jekyll-theme-chirpy
+
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+timezone: Africa/Johannesburg
+
+# Your GitHub username
+github:
+  username: Kamogelo-Bathebeng
+
+# Turn on blog features
+paginate: 10
+paginate_path: "page:num"
