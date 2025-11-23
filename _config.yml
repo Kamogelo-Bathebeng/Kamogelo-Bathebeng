@@ -1,0 +1,5 @@
+title: "Kamogelo's SOC & Cybersecurity Blog"
+description: "Projects, analysis, and tutorials from a SOC Analyst in training."
+theme: minima
+plugins:
+  - jekyll-feed
