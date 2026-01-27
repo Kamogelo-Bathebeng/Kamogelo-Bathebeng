@@ -547,3 +547,19 @@ ul { list-style: none; }
 .header, .nav, .brand, .title {
   overflow: visible;
 }
+
+/* Phone fix: allow Dashboard hero subtitle to wrap */
+@media (max-width: 480px) {
+  .role-line {
+    white-space: normal;
+  }
+
+  /* Optional: prevent any horizontal scrolling */
+  body { overflow-x: hidden; }
+}
+
+@media (max-width: 420px) {
+  .h1 .name-nowrap {
+    white-space: normal;   /* allow wrap only on very small screens */
+  }
+}
