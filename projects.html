@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Your Name</title>
+  <meta name="description" content="Cybersecurity and Cloud Engineering projects with links to GitHub repositories." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html">
+          <div class="logo" aria-hidden="true"></div>
+          <div class="title">
+            <strong>Your Name</strong>
+            <span>Cybersecurity • Cloud</span>
+          </div>
+        </a>
+
+        <div class="navlinks">
+          <a data-nav href="index.html">Dashboard</a>
+          <a data-nav href="projects.html">Projects</a>
+          <a data-nav href="blog.html">Blog</a>
+          <a data-nav href="certifications.html">Certifications</a>
+          <a data-nav href="links.html">Links</a>
+        </div>
+
+        <div class="nav-cta">
+          <a class="button primary" href="links.html#contact">Contact</a>
+          <button class="hamburger" data-burger aria-label="Open menu" aria-expanded="false"><span></span></button>
+        </div>
+      </nav>
+
+      <div class="mobile" data-mobile>
+        <a data-nav href="index.html">Dashboard</a>
+        <a data-nav href="projects.html">Projects</a>
+        <a data-nav href="blog.html">Blog</a>
+        <a data-nav href="certifications.html">Certifications</a>
+        <a data-nav href="links.html">Links</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="card pad">
+        <div class="h1">Projects</div>
+        <p class="lead">
+          Recruiter-friendly summaries with direct GitHub links. I separate projects by role to match job postings.
+        </p>
+        <div class="quick-actions">
+          <a class="button primary" href="#cyber">Cybersecurity</a>
+          <a class="button" href="#cloud">Cloud Engineering</a>
+          <a class="button danger" href="#hybrid">Hybrid / Security-in-Cloud</a>
+        </div>
+      </div>
+
+      <div id="cyber" class="section">
+        <div class="section-title">
+          <h2>Cybersecurity Analyst Projects</h2>
+          <p>Detection • Triage • IR • Threat Hunting</p>
+        </div>
+
+        <div class="grid">
+          <article class="project">
+            <div class="top">
+              <h3>SOC Triage Runbook</h3>
+              <span class="pill red">Cyber</span>
+            </div>
+            <p>Step-by-step triage workflows for alerts: identity, endpoint, network. Includes severity model and escalation.</p>
+            <div class="meta">
+              <span class="chip">Runbooks</span>
+              <span class="chip">Severity</span>
+              <span class="chip">Documentation</span>
+            </div>
+            <div class="links">
+              <a class="link" href="https://github.com/YOUR_GITHUB_USERNAME/soc-triage-runbook" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="top">
+              <h3>Detection Engineering Starter Pack</h3>
+              <span class="pill red">Cyber</span>
+            </div>
+            <p>Detections mapped to MITRE: brute force, suspicious child processes, persistence indicators. Includes tuning notes.</p>
+            <div class="meta">
+              <span class="chip">MITRE</span>
+              <span class="chip">KQL/Sigma</span>
+              <span class="chip">Tuning</span>
+            </div>
+            <div class="links">
+              <a class="link" href="https://github.com/YOUR_GITHUB_USERNAME/detection-starter-pack" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="top">
+              <h3>Incident Report Template + Examples</h3>
+              <span class="pill red">Cyber</span>
+            </div>
+            <p>A clean incident report format: timeline, IOCs, root cause, containment, lessons learned, remediation plan.</p>
+            <div class="meta">
+              <span class="chip">Reporting</span>
+              <span class="chip">IOCs</span>
+              <span class="chip">Lessons Learned</span>
+            </div>
+            <div class="links">
+              <a class="link" href="https://github.com/YOUR_GITHUB_USERNAME/incident-report-kit" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div id="cloud" class="section">
+        <div class="section-title">
+          <h2>Cloud Engineer Projects</h2>
+          <p>Azure • Networking • Identity • Cost • Automation</p>
+        </div>
+
+        <div class="grid">
+          <article class="project">
+            <div class="top">
+              <h3>Azure Landing Zone (Mini)</h3>
+              <span class="pill blue">Cloud</span>
+            </div>
+            <p>Resource groups, naming standards, RBAC baseline, policies, and logging. Designed for clean scale-up.</p>
+            <div class="meta">
+              <span class="chip">Azure</span>
+              <span class="chip">RBAC</span>
+              <span class="chip">Policy</span>
+            </div>
+            <div class="links">
+              <a class="link" href="https://github.com/YOUR_GITHUB_USERNAME/azure-landing-zone-mini" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="top">
+              <h3>Azure Networking Lab</h3>
+              <span class="pill blue">Cloud</span>
+            </div>
+            <p>VNets, subnets, NSGs, routing concepts, and secure service exposure. Includes diagrams + validation steps.</p>
+            <div class="meta">
+              <span class="chip">VNets</span>
+              <span class="chip">NSG</span>
+              <span class="chip">Diagrams</span>
+            </div>
+            <div class="links">
+              <a class="link" href="https://github.com/YOUR_GITHUB_USERNAME/azure-networking-lab" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="top">
+              <h3>Cost Governance & Tagging</h3>
+              <span class="pill blue">Cloud</span>
+            </div>
+            <p>Tag policies, budget alerts, and cost breakdown reporting. Built to show operational maturity.</p>
+            <div class="meta">
+              <span class="chip">FinOps</span>
+              <span class="chip">Tags</span>
+              <span class="chip">Budgets</span>
+            </div>
+            <div class="links">
+              <a class="link" href="https://github.com/YOUR_GITHUB_USERNAME/cost-governance" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div id="hybrid" class="section">
+        <div class="section-title">
+          <h2>Hybrid: Security-in-Cloud Projects</h2>
+          <p>Cloud security posture + logging + response</p>
+        </div>
+
+        <div class="grid">
+          <article class="project">
+            <div class="top">
+              <h3>Central Logging + Alerting</h3>
+              <span class="pill purple">Hybrid</span>
+            </div>
+            <p>Centralize logs, create basic alerts, and document response runbooks. Focus on signal-to-noise and triage.</p>
+            <div class="meta">
+              <span class="chip">Logging</span>
+              <span class="chip">Alerts</span>
+              <span class="chip">Runbooks</span>
+            </div>
+            <div class="links">
+              <a class="link" href="https://github.com/YOUR_GITHUB_USERNAME/central-logging-alerting" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="top">
+              <h3>Identity Hardening Blueprint</h3>
+              <span class="pill purple">Hybrid</span>
+            </div>
+            <p>MFA, least privilege, admin separation, conditional access approach (documented). Includes risks and mitigations.</p>
+            <div class="meta">
+              <span class="chip">IAM</span>
+              <span class="chip">MFA</span>
+              <span class="chip">Least Privilege</span>
+            </div>
+            <div class="links">
+              <a class="link" href="https://github.com/YOUR_GITHUB_USERNAME/identity-hardening" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="top">
+              <h3>Cloud IR Playbook (Starter)</h3>
+              <span class="pill purple">Hybrid</span>
+            </div>
+            <p>Incident response playbook for cloud events: compromised account, suspicious API activity, data exposure scenarios.</p>
+            <div class="meta">
+              <span class="chip">IR</span>
+              <span class="chip">Playbooks</span>
+              <span class="chip">Checklists</span>
+            </div>
+            <div class="links">
+              <a class="link" href="https://github.com/YOUR_GITHUB_USERNAME/cloud-ir-playbook" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <span>© <span id="year"></span> Your Name</span>
+        <span class="muted">Projects link directly to GitHub repositories</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
