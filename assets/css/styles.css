@@ -457,3 +457,14 @@ ul { list-style: none; }
   .grid{ grid-template-columns: 1fr; }
   .card.pad{ padding: 22px; }
 }
+
+/* Navbar name & role control */
+.name-nowrap {
+  white-space: nowrap;
+}
+
+.nav-role {
+  font-size: 0.85rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
