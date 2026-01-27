@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Links & Contact | Your Name</title>
+  <meta name="description" content="Contact details and platform links: TryHackMe, Microsoft Learn, CyberDefenders, LinkedIn, email and phone." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html">
+          <div class="logo" aria-hidden="true"></div>
+          <div class="title">
+            <strong>Your Name</strong>
+            <span>Cybersecurity • Cloud</span>
+          </div>
+        </a>
+
+        <div class="navlinks">
+          <a data-nav href="index.html">Dashboard</a>
+          <a data-nav href="projects.html">Projects</a>
+          <a data-nav href="blog.html">Blog</a>
+          <a data-nav href="certifications.html">Certifications</a>
+          <a data-nav href="links.html">Links</a>
+        </div>
+
+        <div class="nav-cta">
+          <a class="button primary" href="#contact">Contact</a>
+          <button class="hamburger" data-burger aria-label="Open menu" aria-expanded="false"><span></span></button>
+        </div>
+      </nav>
+
+      <div class="mobile" data-mobile>
+        <a data-nav href="index.html">Dashboard</a>
+        <a data-nav href="projects.html">Projects</a>
+        <a data-nav href="blog.html">Blog</a>
+        <a data-nav href="certifications.html">Certifications</a>
+        <a data-nav href="links.html">Links</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="card pad" id="contact">
+        <div class="h1">Links & Contact</div>
+        <p class="lead">Everything a recruiter needs in one place.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Keep it simple and clean</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact">
+            <div class="label">Email</div>
+            <a class="value" href="mailto:youremail@example.com">youremail@example.com</a>
+            <div class="muted small">Use a professional address</div>
+          </div>
+
+          <div class="contact">
+            <div class="label">Phone</div>
+            <a class="value" href="tel:+27XXXXXXXXX">+27 XX XXX XXXX</a>
+            <div class="muted small">Optional: WhatsApp-friendly</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <h2>Platforms</h2>
+          <p>Proof of activity + learning</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact">
+            <div class="label">LinkedIn</div>
+            <a class="value" href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noreferrer">linkedin.com/in/YOUR_LINKEDIN</a>
+          </div>
+
+          <div class="contact">
+            <div class="label">GitHub</div>
+            <a class="value" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noreferrer">github.com/YOUR_GITHUB_USERNAME</a>
+          </div>
+
+          <div class="contact">
+            <div class="label">TryHackMe</div>
+            <a class="value" href="https://tryhackme.com/p/YOUR_THM_USERNAME" target="_blank" rel="noreferrer">tryhackme.com/p/YOUR_THM_USERNAME</a>
+          </div>
+
+          <div class="contact">
+            <div class="label">Microsoft Learn</div>
+            <a class="value" href="https://learn.microsoft.com/en-us/users/me/" target="_blank" rel="noreferrer">Microsoft Learn Profile</a>
+            <div class="muted small">Replace with your public profile link</div>
+          </div>
+
+          <div class="contact">
+            <div class="label">CyberDefenders</div>
+            <a class="value" href="https://cyberdefenders.org/p/YOUR_USERNAME" target="_blank" rel="noreferrer">cyberdefenders.org/p/YOUR_USERNAME</a>
+          </div>
+
+          <div class="contact">
+            <div class="label">Medium</div>
+            <a class="value" href="https://medium.com/@YOUR_MEDIUM_HANDLE" target="_blank" rel="noreferrer">medium.com/@YOUR_MEDIUM_HANDLE</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <span>© <span id="year"></span> Your Name</span>
+        <span class="muted">Links: keep them updated</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
