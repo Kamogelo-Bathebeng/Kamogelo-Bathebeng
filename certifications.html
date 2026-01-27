@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certifications | Your Name</title>
+  <meta name="description" content="Paid certifications and licenses earned over time." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html">
+          <div class="logo" aria-hidden="true"></div>
+          <div class="title">
+            <strong>Your Name</strong>
+            <span>Cybersecurity • Cloud</span>
+          </div>
+        </a>
+
+        <div class="navlinks">
+          <a data-nav href="index.html">Dashboard</a>
+          <a data-nav href="projects.html">Projects</a>
+          <a data-nav href="blog.html">Blog</a>
+          <a data-nav href="certifications.html">Certifications</a>
+          <a data-nav href="links.html">Links</a>
+        </div>
+
+        <div class="nav-cta">
+          <a class="button primary" href="links.html#contact">Contact</a>
+          <button class="hamburger" data-burger aria-label="Open menu" aria-expanded="false"><span></span></button>
+        </div>
+      </nav>
+
+      <div class="mobile" data-mobile>
+        <a data-nav href="index.html">Dashboard</a>
+        <a data-nav href="projects.html">Projects</a>
+        <a data-nav href="blog.html">Blog</a>
+        <a data-nav href="certifications.html">Certifications</a>
+        <a data-nav href="links.html">Links</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="card pad">
+        <div class="h1">Certifications & Licenses</div>
+        <p class="lead">
+          This page is for your <strong>paid</strong> certificates. Add verification links when available.
+        </p>
+        <p class="small">Format: name • issuer • date • credential link (optional)</p>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <h2>Timeline</h2>
+          <p>Update as you progress</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Example cert card -->
+          <div class="cert">
+            <div>
+              <div class="name">Microsoft Certified: Azure Fundamentals (AZ-900)</div>
+              <div class="issuer">Issuer: Microsoft</div>
+              <div class="actions">
+                <a class="link" href="#" target="_blank" rel="noreferrer">Credential Link</a>
+                <a class="link" href="projects.html#cloud">Related Projects</a>
+              </div>
+            </div>
+            <div class="date">Earned: 2026-02-01</div>
+          </div>
+
+          <div class="cert">
+            <div>
+              <div class="name">CompTIA Security+ (SY0-701)</div>
+              <div class="issuer">Issuer: CompTIA</div>
+              <div class="actions">
+                <a class="link" href="#" target="_blank" rel="noreferrer">Credential Link</a>
+                <a class="link" href="projects.html#cyber">Related Projects</a>
+              </div>
+            </div>
+            <div class="date">Planned: 2026-04</div>
+          </div>
+
+          <div class="cert">
+            <div>
+              <div class="name">SC-200: Microsoft Security Operations Analyst</div>
+              <div class="issuer">Issuer: Microsoft</div>
+              <div class="actions">
+                <a class="link" href="#" target="_blank" rel="noreferrer">Credential Link</a>
+                <a class="link" href="projects.html#hybrid">Related Projects</a>
+              </div>
+            </div>
+            <div class="date">Planned: 2026-06</div>
+          </div>
+        </div>
+
+        <p class="small" style="margin-top:14px;">
+          Keep proof consistent: credential link + short “what I learned” bullet list in each related project repo README.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <span>© <span id="year"></span> Your Name</span>
+        <span class="muted">Certifications: add official verification links</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
