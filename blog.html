@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog | Your Name</title>
+  <meta name="description" content="Cybersecurity and cloud engineering writeups hosted on Medium." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html">
+          <div class="logo" aria-hidden="true"></div>
+          <div class="title">
+            <strong>Your Name</strong>
+            <span>Cybersecurity • Cloud</span>
+          </div>
+        </a>
+
+        <div class="navlinks">
+          <a data-nav href="index.html">Dashboard</a>
+          <a data-nav href="projects.html">Projects</a>
+          <a data-nav href="blog.html">Blog</a>
+          <a data-nav href="certifications.html">Certifications</a>
+          <a data-nav href="links.html">Links</a>
+        </div>
+
+        <div class="nav-cta">
+          <a class="button primary" href="links.html#contact">Contact</a>
+          <button class="hamburger" data-burger aria-label="Open menu" aria-expanded="false"><span></span></button>
+        </div>
+      </nav>
+
+      <div class="mobile" data-mobile>
+        <a data-nav href="index.html">Dashboard</a>
+        <a data-nav href="projects.html">Projects</a>
+        <a data-nav href="blog.html">Blog</a>
+        <a data-nav href="certifications.html">Certifications</a>
+        <a data-nav href="links.html">Links</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="card pad">
+        <div class="h1">Blog (Medium)</div>
+        <p class="lead">
+          I publish writeups on incidents, labs, cloud builds, detection logic, and lessons learned. All posts are hosted on Medium.
+        </p>
+
+        <div class="quick-actions">
+          <a class="button primary" href="https://medium.com/@YOUR_MEDIUM_HANDLE" target="_blank" rel="noreferrer">Open My Medium</a>
+          <a class="button" href="projects.html">Browse Projects</a>
+        </div>
+
+        <div class="spacer"></div>
+        <div class="gradient-line"></div>
+        <div class="spacer"></div>
+
+        <div class="section-title">
+          <h2>Suggested Post Structure</h2>
+          <p>Recruiter-friendly format</p>
+        </div>
+
+        <div class="grid">
+          <article class="project">
+            <div class="top">
+              <h3>1) Problem</h3>
+              <span class="pill red">Clarity</span>
+            </div>
+            <p>What you tried to solve, what risk existed, and why it matters.</p>
+            <div class="meta"><span class="chip">Context</span><span class="chip">Impact</span></div>
+          </article>
+
+          <article class="project">
+            <div class="top">
+              <h3>2) Approach</h3>
+              <span class="pill blue">Method</span>
+            </div>
+            <p>Tools used, architecture, detection logic, runbooks, and reasoning.</p>
+            <div class="meta"><span class="chip">Steps</span><span class="chip">Tradeoffs</span></div>
+          </article>
+
+          <article class="project">
+            <div class="top">
+              <h3>3) Evidence</h3>
+              <span class="pill purple">Proof</span>
+            </div>
+            <p>Logs, screenshots, queries, results, diagrams, and what you verified.</p>
+            <div class="meta"><span class="chip">Artifacts</span><span class="chip">Results</span></div>
+          </article>
+        </div>
+
+        <p class="small" style="margin-top:14px;">
+          Keep posts short and dense: 5–10 minutes read time, strong visuals, and links back to the GitHub repo.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <span>© <span id="year"></span> Your Name</span>
+        <span class="muted">Blog hosted on Medium</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
