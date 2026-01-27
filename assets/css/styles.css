@@ -533,6 +533,17 @@ ul { list-style: none; }
   .brand { max-width: 520px; }
 }
 
-.brand .title { line-height: 1.25; }
-.brand .title strong.name-nowrap { line-height: 1.25; }
-.nav-role { line-height: 1.2; }
+/* Fix clipped descenders in navbar text (g, y, p) */
+.brand .title {
+  padding-bottom: 3px;
+}
+
+.brand .title strong.name-nowrap,
+.brand .title .nav-role {
+  padding-bottom: 2px;
+}
+
+/* Ensure navbar containers don’t clip text */
+.header, .nav, .brand, .title {
+  overflow: visible;
+}
