@@ -80,13 +80,18 @@ ul { list-style: none; }
   padding: 14px 0;
 }
 
+/* Brand (avatar + name + role) */
 .brand{
   display: flex;
   align-items: center;
   gap: 10px;
+
+  /* critical for preventing overlap */
   min-width: 0;
   max-width: 320px;
 }
+
+/* If you ever use the gradient logo again */
 .logo{
   width: 38px;
   height: 38px;
@@ -94,13 +99,52 @@ ul { list-style: none; }
   background: linear-gradient(135deg, rgba(255,59,59,0.95), rgba(58,166,255,0.95), rgba(155,92,255,0.95));
   box-shadow: 0 10px 28px rgba(0,0,0,0.35);
 }
+
+/* Navbar profile picture */
+.nav-avatar{
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid rgba(255,255,255,0.25);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+/* Brand text container */
 .brand .title{
   display: flex;
   flex-direction: column;
   line-height: 1.15;
+
+  /* critical for truncation */
+  min-width: 0;
 }
-.brand .title strong{ font-size: 1.05rem; letter-spacing: 0.2px; }
-.brand .title span{ font-size: 0.9rem; color: var(--muted); }
+
+/* Navbar name + role */
+.name-nowrap{
+  white-space: nowrap; /* do not wrap */
+}
+
+/* Make name/role truncate instead of pushing into nav links */
+.brand .title strong.name-nowrap{
+  font-size: 1.05rem;
+  letter-spacing: 0.2px;
+  display: block;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nav-role{
+  font-size: 0.9rem;
+  color: var(--muted);
+  display: block;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 .navlinks{
   display: flex;
@@ -130,6 +174,7 @@ ul { list-style: none; }
   align-items: center;
   gap: 10px;
 }
+
 .button{
   display: inline-flex;
   align-items: center;
@@ -249,6 +294,7 @@ ul { list-style: none; }
   line-height: 1.2;
   letter-spacing: 0.2px;
 }
+
 .lead{
   margin-top: 12px;
   color: var(--muted);
@@ -260,6 +306,12 @@ ul { list-style: none; }
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 18px;
+}
+
+/* Hero role line (below name if you use it) */
+.role-line{
+  font-size: 0.95em;
+  white-space: nowrap;
 }
 
 /* Right side "dashboard" */
@@ -453,50 +505,21 @@ ul { list-style: none; }
   .contact-grid{ grid-template-columns: 1fr; }
 }
 
-@media (max-width: 760px){
+/* IMPORTANT: switch to hamburger earlier to avoid overlap on small laptops */
+@media (max-width: 900px){
   .navlinks, .nav-cta{ display: none; }
   .hamburger{ display: inline-flex; }
+
+  /* Brand can expand a bit when nav links are hidden */
+  .brand{ max-width: 420px; }
+}
+
+@media (max-width: 760px){
   .grid{ grid-template-columns: 1fr; }
   .card.pad{ padding: 22px; }
 }
 
-/* Navbar name & role control */
-.name-nowrap {
-  white-space: nowrap;
-}
-
-.nav-role {
-  font-size: 0.85rem;
-  color: var(--muted);
-  white-space: nowrap;
-}
-
-/* Hero role line (below name) */
-.role-line {
-  font-size: 0.95em;
-  white-space: nowrap;
-}
-
-/* Navbar profile picture */
-.nav-avatar {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1.5px solid rgba(255,255,255,0.25);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
-}
-
-/* --- Prevent navbar overlap on mid-size screens --- */
-@media (max-width: 1100px) {
-  .brand { max-width: 260px; }
-}
-
-@media (max-width: 980px) {
-  .brand { max-width: 220px; }
-  .navlinks a { padding: 8px 10px; } /* slightly tighter */
-}
-
-@media (max-width: 860px) {
-  .brand { max-width: 200px; }
-}
+/* Progressive brand shrinking for mid screens (keeps things stable) */
+@media (max-width: 1100px){ .brand { max-width: 260px; } }
+@media (max-width: 980px){  .brand { max-width: 220px; } .navlinks a { padding: 8px 10px; } }
+@media (max-width: 860px){  .brand { max-width: 200px; } }
