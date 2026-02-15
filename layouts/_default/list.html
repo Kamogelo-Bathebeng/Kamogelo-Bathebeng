@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <div class="prose reveal">
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
+    </div>
+
+    <div class="section">
+      <div class="grid">
+        {{ range .Pages.ByDate.Reverse }}
+        <article class="card reveal">
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+          <div class="meta">
+            <div>{{ .Date.Format "02 Jan 2006" }}</div>
+            <div>
+              {{ with .Params.tags }}
+                {{ range first 2 . }}<span class="pill red">{{ . }}</span>{{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

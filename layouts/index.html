@@ -1,0 +1,89 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="container">
+    <div class="hero-card reveal">
+      <div class="hero-inner">
+        <div>
+          <div class="kicker"><span class="kdot"></span> Building a Red Team portfolio (offline-first → public)</div>
+          <h1>{{ site.Params.author | default "Kamogelo Bathebeng" }}</h1>
+          <p>{{ site.Params.description }}</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/projects/">View Projects</a>
+            <a class="btn btn-ghost" href="/writeups/">Read Writeups</a>
+            <a class="btn btn-purple" href="/blog/">Learning Log</a>
+          </div>
+          <p class="small" style="margin-top:14px;">This site is curated, recruiter-friendly output. Raw notes live privately in Obsidian.</p>
+        </div>
+        <aside class="hero-side">
+          <div class="badge-grid">
+            <div class="badge"><div class="t">Focus</div><div class="s">Web App Pentest</div></div>
+            <div class="badge"><div class="t">Focus</div><div class="s">Red Team Skills</div></div>
+            <div class="badge"><div class="t">Secondary</div><div class="s">SOC / IR</div></div>
+            <div class="badge"><div class="t">Secondary</div><div class="s">IT Support Labs</div></div>
+          </div>
+          <div style="margin-top:12px;" class="small">Tip: Add one publishable item per week. Consistency beats intensity.</div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="reveal">What’s inside</h2>
+    <p class="lead reveal">Projects are case studies. Writeups are learning summaries. GitHub holds full source where needed.</p>
+
+    <div class="grid">
+      <div class="card reveal">
+        <h3>Projects</h3>
+        <p>Red Team tools, SOC detections, and IT support labs — written as clear case studies.</p>
+        <div class="pill-row">
+          <span class="pill red">Red Team</span><span class="pill blue">SOC</span><span class="pill purple">IT</span>
+        </div>
+        <div style="margin-top:14px;"><a class="btn btn-ghost" href="/projects/">Browse projects</a></div>
+      </div>
+
+      <div class="card reveal">
+        <h3>Writeups</h3>
+        <p>PortSwigger & TryHackMe summaries focused on methodology + mitigation (no messy secrets).</p>
+        <div class="pill-row">
+          <span class="pill blue">Web</span><span class="pill red">Pentest</span><span class="pill purple">Labs</span>
+        </div>
+        <div style="margin-top:14px;"><a class="btn btn-ghost" href="/writeups/">Browse writeups</a></div>
+      </div>
+
+      <div class="card reveal">
+        <h3>Blog</h3>
+        <p>Short learning logs: what I tried, what worked, what I’ll improve next week.</p>
+        <div class="pill-row">
+          <span class="pill red">Progress</span><span class="pill blue">Notes</span>
+        </div>
+        <div style="margin-top:14px;"><a class="btn btn-ghost" href="/blog/">Read posts</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="reveal">Quick start (your workflow)</h2>
+    <div class="grid">
+      <div class="card reveal">
+        <h3>1) Capture</h3>
+        <p>Obsidian: raw notes, screenshots, commands, failures.</p>
+        <div class="pill-row"><span class="pill red">Private</span></div>
+      </div>
+      <div class="card reveal">
+        <h3>2) Curate</h3>
+        <p>Move publish-ready notes to a “PublishQueue” folder. Sanitize. Add mitigation.</p>
+        <div class="pill-row"><span class="pill purple">Curated</span></div>
+      </div>
+      <div class="card reveal">
+        <h3>3) Publish</h3>
+        <p>Copy Markdown into Hugo content. Preview locally. Push to GitHub → Pages updates.</p>
+        <div class="pill-row"><span class="pill blue">Public</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

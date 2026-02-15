@@ -1,0 +1,19 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <article class="prose reveal">
+      <h1>{{ .Title }}</h1>
+      <div class="meta" style="margin-bottom: 10px;">
+        <div>{{ .Date.Format "02 Jan 2006" }}</div>
+        <div>
+          {{ with .Params.github }}
+            <a class="btn btn-ghost" href="{{ . }}" target="_blank" rel="noopener">View on GitHub</a>
+          {{ end }}
+        </div>
+      </div>
+      {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
+      {{ .Content }}
+    </article>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,7 @@
+baseURL = "https://Kamogelo-Bathebeng.github.io/"
+languageCode = "en-us"
+title = "Kamogelo Bathebeng | Cybersecurity Portfolio"
+
+[params]
+  description = "Ethical Hacking • Penetration Testing • Web App Security • SOC • IT Support"
+  author = "Kamogelo Bathebeng"
